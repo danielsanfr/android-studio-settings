@@ -1,0 +1,16 @@
+<templateSet group="Kotlin">
+  <template name="createIntent" value="companion object {&#10;    @JvmStatic fun createIntent(context: Context$args$): Intent {&#10;        return Intent(context, $activity$::class.java)&#10;    }&#10;}" description="Create a new Intent for a Activity" toReformat="true" toShortenFQNames="true">
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="activity" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="bindingActivity" value="private val binding by lazy {&#10;    DataBindingUtil.setContentView&lt;$bindingClass$&gt;(this, R.layout.$bindingLayout$)&#10;}" description="Create binding object for a Activity" toReformat="false" toShortenFQNames="true">
+    <variable name="bindingClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="bindingLayout" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,17 @@
+<templateSet group="Android">
+  <template name="createIntent" value="public static android.content.Intent createIntent(android.content.Context context, $args$) {&#10;    final android.content.Intent intent = new Intent(context, $activity$.class)&#10;    $addArgs$&#10;    return intent;&#10;}" description="create a new Intent to start a Activity with argments" toReformat="true" toShortenFQNames="true">
+    <variable name="activity" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="args" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="addArgs" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="SnackBar" value="android.support.design.widget.Snackbar.make($view$, &quot;$text$&quot;, Snackbar.LENGTH_SHORT).show();" description="Create a new SnackBar" toReformat="true" toShortenFQNames="true">
+    <variable name="view" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
